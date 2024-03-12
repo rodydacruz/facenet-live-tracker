@@ -1,0 +1,7 @@
+facenet_pytorch
+torch
+numpy
+mmcv
+pillow
+IPython
+pytube
