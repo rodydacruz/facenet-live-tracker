@@ -22,9 +22,9 @@ video = mmcv.VideoReader(videoSrc)
 frames = [Image.fromarray(cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)) for frame in video]
 
 # Initialize the PersonCRUD object
-people = PersonRepository('persons.db')
+people = PersonRepository('database.db')
 # Initialize the LogCRUD object
-logs = LogRepository('persons.db')
+logs = LogRepository('database.db')
 # Get all persons from the database
 persons = people.get_all_persons()
 
